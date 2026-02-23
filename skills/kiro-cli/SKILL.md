@@ -15,8 +15,6 @@ metadata:
 
 AWS AI coding assistant for building, testing, and deploying applications with automated workflows.
 
-> **Tested:** 2026-02-23 with kiro-cli. Commands may change with updates.
-
 **Model:** `claude-sonnet-4.6` is the default (set via `kiro-cli settings chat.defaultModel`)
 
 ## ⚠️ PTY Required
