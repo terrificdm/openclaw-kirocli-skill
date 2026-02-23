@@ -48,45 +48,26 @@ Provide persistent knowledge via markdown in `.kiro/steering/`:
 
 ## Kiro Skills
 
-Skills are progressively-loaded markdown files with YAML frontmatter. Only metadata loads at startup; full content loads on demand.
+Skills are instruction packages that extend Kiro's capabilities. They activate automatically based on your request.
 
-### Skill File Format
+### Default Agent
 
-```markdown
----
-name: dynamodb-data-modeling
-description: Guide for DynamoDB data modeling. Use when designing DynamoDB schema.
----
+Automatically loads skills from `.kiro/skills/` and `~/.kiro/skills/`. No configuration needed.
 
-# DynamoDB Data Modeling
+### Custom Agents
 
-... full content here ...
-```
-
-### Using Skills in Agent Config
+Must explicitly declare skills in `resources`:
 
 ```json
 {
   "resources": [
-    "skill://.kiro/skills/**/SKILL.md",
-    "skill://~/.kiro/skills/aws-patterns.md"
+    "skill://.kiro/skills/*/SKILL.md",
+    "skill://~/.kiro/skills/*/SKILL.md"
   ]
 }
 ```
 
-### Skill Storage
-
-- **Workspace**: `.kiro/skills/`
-- **Global**: `~/.kiro/skills/`
-
-### When to Use Skills vs Files
-
-| Type | Context Load | Best For |
-|------|--------------|----------|
-| `file://` | Always (at startup) | Essential files, configs |
-| `skill://` | On demand | Large guides, reference docs |
-
-Write specific descriptions so Kiro knows when to load the full content.
+If a custom agent isn't using expected skills, check that `skill://` paths are in its `resources` field.
 
 ---
 
