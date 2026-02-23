@@ -1,23 +1,5 @@
 # Kiro CLI Advanced Reference
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Authentication](#authentication)
-- [Steering](#steering-project-context)
-- [Kiro Skills](#kiro-skills)
-- [Knowledge Bases](#knowledge-bases)
-- [MCP Integration](#mcp-integration)
-- [Custom Agent Configuration](#custom-agent-configuration)
-- [Subagents](#subagents)
-- [Hooks](#hooks)
-- [Prompts Management](#prompts-management)
-- [Settings](#settings)
-- [In-Chat Commands](#in-chat-commands)
-- [Other Commands](#other-commands)
-
----
-
 ## Installation
 
 See official guide: [https://kiro.dev/docs/cli/installation](https://kiro.dev/docs/cli/installation)

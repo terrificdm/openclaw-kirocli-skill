@@ -241,11 +241,13 @@ This prevents the user from seeing only "Agent failed before reply" and having n
 See [references/advanced.md](references/advanced.md) for:
 - Installation / Authentication (links to official docs)
 - Steering (project context)
-- MCP integration
-- Custom agent configuration
-- Kiro Skills system
+- Kiro Skills
 - Knowledge Bases
+- MCP Integration
+- Custom Agent Configuration
 - Subagents
 - Hooks
-- Prompts management
+- Prompts Management
 - Settings
+- In-Chat Commands
+- Other Commands
