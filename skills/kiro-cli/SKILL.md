@@ -48,6 +48,7 @@ Without PTY, output breaks or agent hangs.
 | `write` | Send raw data to stdin |
 | `submit` | Send data + newline (like typing and pressing Enter) |
 | `send-keys` | Send key tokens or hex bytes |
+| `paste` | Paste text (with optional bracketed mode) |
 | `kill` | Terminate the session |
 
 ## Quick Reference
@@ -222,6 +223,7 @@ bash pty:true background:true command:"mkdir -p ~/project && cd ~/project && kir
 7. **Be patient** — don't kill sessions because they're "slow"
 8. **Monitor with process:log** — check progress without interfering
 9. **NEVER spawn kiro in ~/.openclaw/workspace** — contains sensitive files (SOUL.md, MEMORY.md)
+10. **Parallel is OK** — run multiple kiro sessions at once for batch work
 
 ## Progress Updates (Critical)
 
