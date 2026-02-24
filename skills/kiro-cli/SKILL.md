@@ -36,6 +36,7 @@ Without PTY, output breaks or agent hangs.
 | `workdir` | string | Working directory — ⚠️ may fallback to cwd if unavailable, use `mkdir -p && cd` instead |
 | `background` | boolean | Run in background, returns sessionId for monitoring |
 | `timeout` | number | Timeout in seconds (kills process on expiry) |
+| `elevated` | boolean | Run on host instead of sandbox (if allowed) — use when kiro needs full file system access |
 
 ### Process Tool Actions (for background sessions)
 
