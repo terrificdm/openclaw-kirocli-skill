@@ -1,6 +1,6 @@
 ---
 name: kiro-cli
-description: Manage Kiro CLI (AWS AI coding assistant) via background process. Use when user mentions kiro, kiro-cli, or requires coding development capabilities, including building, testing, and deploying applications with automated workflows. NOT for simple one-liner edits.
+description: Spawn Kiro CLI via background process for code-related tasks. Use when user mentions "kiro", "kiro-cli", or needs to work with code — writing, modifying, reading, analyzing, reviewing, debugging, explaining, or understanding codebases. This includes building features, fixing bugs, refactoring, writing tests, code review, and exploring unfamiliar code.
 metadata:
   {
     "openclaw": {
@@ -197,7 +197,7 @@ Workflow: Requirements → Research → Plan → Handoff
 
 Plan agent is read-only (can explore code but not modify).
 
-## OpenClaw Integration
+## Quick Examples
 
 ```
 # Quick one-shot

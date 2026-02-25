@@ -69,7 +69,7 @@ cp -r skills/kiro-cli/* ~/.openclaw/workspace/skills/kiro-cli/
 
 ## 使用方法
 
-安装后，当你提到 **"kiro"** 或请求复杂编程任务时，OpenClaw 会自动使用此技能。
+安装后，当你提到 **"kiro"** 或需要处理代码相关任务时，OpenClaw 会自动使用此技能。
 
 ### 一次性任务
 
