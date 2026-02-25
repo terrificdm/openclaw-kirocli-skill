@@ -204,10 +204,10 @@ Plan agent is read-only (can explore code but not modify).
 bash pty:true command:"mkdir -p ~/project && cd ~/project && kiro-cli chat --no-interactive --trust-all-tools 'Add error handling'"
 
 # Long task with wake notification
-bash pty:true background:true command:"mkdir -p ~/project && cd ~/project && kiro-cli chat --no-interactive --trust-all-tools 'Refactor auth module. When done: openclaw system event --text \"Done\" --mode now'"
+bash pty:true background:true command:"mkdir -p ~/project && cd ~/project && kiro-cli chat --no-interactive --trust-all-tools 'Refactor auth module. When done, run: openclaw system event --text \"Done: [brief summary of what was changed]\" --mode now'"
 
 # With custom agent
-bash pty:true background:true command:"mkdir -p ~/project && cd ~/project && kiro-cli --agent aws-expert 'Set up Lambda'"
+bash pty:true background:true command:"mkdir -p ~/project && cd ~/project && kiro-cli --agent aws-expert chat --no-interactive --trust-all-tools 'Set up Lambda'"
 ```
 
 ## Rules
